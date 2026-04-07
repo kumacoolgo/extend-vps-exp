@@ -2,7 +2,7 @@
 // @name         Extend VPS Expiration
 // @name:zh-CN   Xserver VPS 自动续期脚本
 // @namespace    http://tampermonkey.net/
-// @version      2026-04-08
+// @version      2026-04-09
 // @description  Automatically renews the expiration date of free Xserver VPS.
 // @description:zh-CN 自动为 Xserver 的免费 VPS 续期。
 // @author       You
@@ -51,6 +51,7 @@
  * fills the result, and submits the form once the Cloudflare Turnstile token is ready.)
  * =================================================================================================
  */
+/* global tf */
 
 // 翻译
 function t(text) {
