@@ -2,7 +2,7 @@
 // @name         Extend VPS Expiration
 // @name:zh-CN   Xserver VPS 自动续期脚本
 // @namespace    http://tampermonkey.net/
-// @version      2026-04-07
+// @version      2026-04-08
 // @description  Automatically renews the expiration date of free Xserver VPS.
 // @description:zh-CN 自动为 Xserver 的免费 VPS 续期。
 // @author       You
@@ -217,7 +217,7 @@ async function imageToCode(img) {
                             unsafeWindow.loginFunc();
                         } else {
                             console.warn(`${LOG_PREFIX} 页面登录函数 loginFunc 不存在或不是函数。`);
-                            unsafeWindow.action_user_login.click();
+                            unsafeWindow.login_area.submit();
                         }
                     }, 500);
                 } else {
